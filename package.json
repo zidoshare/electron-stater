@@ -4,10 +4,11 @@
   "main": "./src/main.js",
   "scripts": {
     "start": "electron ./src/",
+    "dev":"electron ./src/ --debug",
     "package": "node ./electron-package",
-    "install": "grunt create-windows-installer",
+    "deploy": "grunt create-windows-installer",
     "build": "npm run package && npm run install",
-    "clean:install": "rimraf ./build/release",
+    "clean:deploy": "rimraf ./build/release",
     "clean:package": "rimraf ./build/schat-win32-x64",
     "clean":"npm run clean:install & npm run clean:package"
   },

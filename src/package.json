@@ -1,5 +1,5 @@
 {
-  "name": "schat",
+  "name": "electron-start",
   "version": "0.1.0",
   "main": "./main.js"
 }
